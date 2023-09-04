@@ -1,0 +1,30 @@
+:root{
+    --main-color: #24353f;
+    --second-color: #17a2b8;
+}
+.bg-main , .form-control , .form-control:focus{
+    background-color: var(--main-color);
+}
+.text-second{
+    color: var(--second-color);
+}
+button{
+    border: var(--second-color) 1px solid;
+}
+button:hover{
+    background-color: var(--second-color);
+    color: #fff;
+}
+.form-control:focus{
+    color: #fff;
+    border: var(--second-color) 1px solid;
+    outline: 0;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+.form-control{
+    color: #fff;
+}
+a:hover{
+    text-decoration: underline !important;
+    color: var(--second-color) !important;
+}

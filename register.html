@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-main">
+    <div class="container vh-100 d-flex justify-content-center align-items-center">
+        <form class="shadow-lg p-5 w-75 text-center">
+            <h1 class="text-second  mb-4">Smart Login System</h1>
+            <input id="username" oninput="validateUsername()" class="form-control my-3" type="text" placeholder="Enter your name">
+            <div id="usernameAlert" class="alert alert-danger border border-danger mx-auto p-2 d-none" role="alert">
+                The name must start with a capital letter and from 3 to 8 letters and from 0 to 4 numbers!  &nbsp; &nbsp; &nbsp;  ex: Mostafa
+            </div>
+            <input id="email" oninput="validateEmail()" class="form-control my-3" type="email" placeholder="Enter your email">
+            <div id="emailAlert" class="alert alert-danger border border-danger mx-auto p-2 d-none" role="alert">
+                The email must start with a small letter and from 2 to 8 letters and from 1 to 5 numbers and @gmail.com!  &nbsp; &nbsp; &nbsp;  ex: mostafa7@gmail.com
+            </div>
+            <input id="password" oninput="validatePassword()" class="form-control my-3" type="password" placeholder="Enter your password">
+            <div id="passwordAlert" class="alert alert-danger border border-danger mx-auto p-2 d-none" role="alert">
+                The password must be from 5 to 15 letters or numbers or characters!  &nbsp; &nbsp; &nbsp;  ex: mostafa777
+            </div>
+            <button id="register" class="bg-main text-second rounded w-100 py-2 my-3">Sign Up</button>
+            <span class="text-white">You have an account?</span>
+            <a class="link-light text-decoration-none" href="login.html">Sign In</a>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
