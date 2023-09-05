@@ -30,7 +30,7 @@ registerBtn.addEventListener("click" , function(e){
             usersList.push(userInfo);
             localStorage.setItem("users" , JSON.stringify(usersList));
             setTimeout( () => {
-                window.location = "login.html"
+                window.location = "index.html"
             }, 750);
         };
     };

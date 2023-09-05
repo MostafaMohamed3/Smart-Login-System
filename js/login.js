@@ -10,7 +10,7 @@ loginBtn.addEventListener("click" , function(e){
     e.preventDefault();
     if (userExist() == true) {
         setTimeout( () => {
-            window.location = "index.html"
+            window.location = "home.html"
         }, 750);
     }else{
         alert("invalid email or password!");
